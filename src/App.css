@@ -1,0 +1,196 @@
+code {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-variant-numeric: tabular-nums;
+  color: white;
+  font-size: 100%;
+  font-weight: bold;
+  text-shadow: 0 1px 7px rgba(0, 0, 0, 0.225);
+  line-height: 34px;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  color: #71757d;
+  height: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.App-header {
+  height: 0%;
+  height: 0vh;
+  height: calc(var(--vh, 1vh) * 0);
+}
+
+.App-body {
+  height: 92%;
+  height: 92vh;
+  height: calc(var(--vh, 1vh) * 92);
+  display: flex;
+  align-items: center;
+}
+
+.App-footer {
+  height: 8%;
+  height: 8vh;
+  height: calc(var(--vh, 1vh) * 8);
+}
+
+.card-row {
+  justify-content: center;
+}
+
+.card {
+  background-color: rgb(30,30,30) !important;
+  color: white !important;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card-size {
+  min-height: 325px;
+  min-width: 300px;
+  max-width: 300px;
+}
+
+.card-content {
+  width: 300px;
+  height: 300px;
+}
+
+.card-counter {
+  position: absolute; 
+  top: 225.85px; 
+  left: 225.85px;
+  font-size: 28.88px;
+}
+
+.card-image {
+  height: 300px;
+  width: 300px;
+  position: absolute; 
+  top:0; 
+  left:0;
+}
+
+.card-footer {
+  font-size: 100%;
+}
+
+.icon-size {
+  height: 40px;
+  width: 40px;
+}
+
+.lds-grid-container {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  code {
+    font-size: 133.33%;
+  }
+
+  .card-size {
+    min-height: 425px;
+    min-width: 400px;
+    max-width: 400px;
+  }
+
+  .card-content {
+    width: 400px;
+    height: 400px;
+  }
+
+  .card-counter {
+    top: 310px; 
+    left: 310px;
+  }
+
+  .card-image {
+    height: 400px;
+    width: 400px;
+  }
+
+  .icon-size {
+    height: 60px;
+    width: 60px;
+  }
+
+  .lds-grid-container {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
